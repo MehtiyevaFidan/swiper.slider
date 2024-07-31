@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Azərbaycanı Kəşf Et</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider-img">
+                    <img src="img/qebele.jpg" alt="">
+                </div>
+                <div class="map-img">
+                    <img src="img/qebelemap.png" alt="">
+                </div>
+                <div class="slider-content">
+                    <h3>Qəbələ</h3>
+                    <p>Mədəniyyət&Tarix / Təbiət / Gəzməli yerlər</p>
+                    <a href="" class="btn">Təfərrüatlar</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-img">
+                    <img src="img/ismayilli1.jpg" alt="">
+                </div>
+                <div class="map-img">
+                    <img src="img/ismayillimap.png" alt="">
+                </div>
+                <div class="slider-content">
+                    <h3>Ismayıllı</h3>
+                    <p>Mədəniyyət&Tarix / Təbiət / Gəzməli yerlər</p>
+                    <a href="" class="btn">Təfərrüatlar</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-img">
+                    <img src="img/baku.png" alt="">
+                </div>
+                <div class="map-img">
+                    <img src="img/bakumap.png" alt="">
+                </div>
+                <div class="slider-content">
+                    <h3>Bakı</h3>
+                    <p>Mədəniyyət&Tarix / Təbiət / Gəzməli yerlər</p>
+                    <a href="" class="btn">Təfərrüatlar</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-img">
+                    <img src="img/seki.jpg" alt="">
+                </div>
+                <div class="map-img">
+                    <img src="img/sekimap.png" alt="">
+                </div>
+                <div class="slider-content">
+                    <h3>Şəki</h3>
+                    <p>Mədəniyyət&Tarix / Təbiət / Gəzməli yerlər</p>
+                    <a href="" class="btn">Təfərrüatlar</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
